@@ -1,0 +1,1460 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/kraigm/homebridge-harmonyhub#readme"
+
+    >homebridge-harmonyhub (v0.2.0)</a>
+</h1>
+<h4>Logitech Harmony Hub plugin for HomeBridge</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub">module homebridge-harmonyhub</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.accessory_base">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>accessory_base
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.activity_accessory">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>activity_accessory
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.home_platform">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>home_platform
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_accessory_base">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_accessory_base
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_connection
+            <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>bluebird_ext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_connection.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>inherit</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.accessory_base">module homebridge-harmonyhub.accessory_base</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.accessory_base.accessory_base">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>accessory_base
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.accessory_base.AccessoryBase">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.accessory_base.</span>AccessoryBase
+            <span class="apidocSignatureSpan">(accessory, idKey, name, log)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.activity_accessory">module homebridge-harmonyhub.activity_accessory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.activity_accessory.activity_accessory">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>activity_accessory
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.activity_accessory.ActivityAccessory">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.activity_accessory.</span>ActivityAccessory
+            <span class="apidocSignatureSpan">(accessory, log, connection)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.activity_accessory.</span>ActivityStatus</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.bluebird_ext">module homebridge-harmonyhub.bluebird_ext</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.bluebird_ext.asBlueBird">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.bluebird_ext.</span>asBlueBird
+            <span class="apidocSignatureSpan">(func)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.bluebird_ext.toBlueBird">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.bluebird_ext.</span>toBlueBird
+            <span class="apidocSignatureSpan">(promise)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.home_platform">module homebridge-harmonyhub.home_platform</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.home_platform.home_platform">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>home_platform
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.home_platform.HomePlatform">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.home_platform.</span>HomePlatform
+            <span class="apidocSignatureSpan">(log, config, api)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.home_platform.</span>Events</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.hub">module homebridge-harmonyhub.hub</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub.hub">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub.Hub">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub.</span>Hub
+            <span class="apidocSignatureSpan">(log, connection)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.hub_accessory_base">module homebridge-harmonyhub.hub_accessory_base</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_accessory_base.hub_accessory_base">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_accessory_base
+            <span class="apidocSignatureSpan">(exportedTypes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_accessory_base.HubAccessoryBase">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_accessory_base.</span>HubAccessoryBase
+            <span class="apidocSignatureSpan">(accessory, connection, idKey, name, log)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.hub_connection">module homebridge-harmonyhub.hub_connection</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.hub_connection">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_connection
+            <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.HubConnection">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>HubConnection
+            <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.createAsync">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>createAsync
+            <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.super_">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>ConnectionStatus</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>Events</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.hub_connection.prototype">module homebridge-harmonyhub.hub_connection.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._HandleConnectionOffline">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_HandleConnectionOffline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._HandleConnectionOnline">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_HandleConnectionOnline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._OnConnectionChanged">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_OnConnectionChanged
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._getClientAsync">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_getClientAsync
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.connectAsync">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>connectAsync
+            <span class="apidocSignatureSpan">(hubInfo)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.disconnectAsync">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>disconnectAsync
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.invokeAsync">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>invokeAsync
+            <span class="apidocSignatureSpan">(func)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.refresh">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>refresh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.refreshAsync">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>refreshAsync
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.inherit">module homebridge-harmonyhub.inherit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.inherit.changeBase">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.inherit.</span>changeBase
+            <span class="apidocSignatureSpan">(Class, BaseClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.inherit.fromInstance">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.inherit.</span>fromInstance
+            <span class="apidocSignatureSpan">(inst, Class)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.inherit.mixin">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.inherit.</span>mixin
+            <span class="apidocSignatureSpan">(Class, MixinClass, doOverride)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub" id="apidoc.module.homebridge-harmonyhub">module homebridge-harmonyhub</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.accessory_base" id="apidoc.element.homebridge-harmonyhub.accessory_base">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>accessory_base
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">accessory_base = function (exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Accessory) {
+		Accessory = exportedTypes.PlatformAccessory || exportedTypes.Accessory;
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+		uuid = exportedTypes.uuid;
+	}
+	return AccessoryBase;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.activity_accessory" id="apidoc.element.homebridge-harmonyhub.activity_accessory">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>activity_accessory
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">activity_accessory = function (exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Service) {
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+		inherit.changeBase(ActivityService, Service.Switch);
+		ActivityService.UUID = Service.Switch.UUID;
+	}
+	return ActivityAccessory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.home_platform" id="apidoc.element.homebridge-harmonyhub.home_platform">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>home_platform
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">home_platform = function () {
+	return HomePlatform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub" id="apidoc.element.homebridge-harmonyhub.hub">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hub = function (exportedTypes) {
+	return Hub;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_accessory_base" id="apidoc.element.homebridge-harmonyhub.hub_accessory_base">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_accessory_base
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hub_accessory_base = function (exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Service) {
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+	}
+	return HubAccessoryBase;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection" id="apidoc.element.homebridge-harmonyhub.hub_connection">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_connection
+        <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HubConnection(hubInfo, log, discover) {
+	EventEmitter.call(this);
+	this.hubId = hubInfo.uuid;
+	this.hubInfo = hubInfo;
+	this.log = log;
+	this._discover = discover;
+
+	var self = this;
+	self._discover.on(&#x27;online&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOnline();
+	});
+
+	self._discover.on(&#x27;offline&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOffline();
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.accessory_base" id="apidoc.module.homebridge-harmonyhub.accessory_base">module homebridge-harmonyhub.accessory_base</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.accessory_base.accessory_base" id="apidoc.element.homebridge-harmonyhub.accessory_base.accessory_base">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>accessory_base
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">accessory_base = function (exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Accessory) {
+		Accessory = exportedTypes.PlatformAccessory || exportedTypes.Accessory;
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+		uuid = exportedTypes.uuid;
+	}
+	return AccessoryBase;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.accessory_base.AccessoryBase" id="apidoc.element.homebridge-harmonyhub.accessory_base.AccessoryBase">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.accessory_base.</span>AccessoryBase
+        <span class="apidocSignatureSpan">(accessory, idKey, name, log)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function AccessoryBase(accessory, idKey, name, log) {
+	this.log = log;
+
+	if (!accessory) {
+		var id = uuid.generate(idKey);
+		accessory = new Accessory(name, id);
+		accessory.name = name;
+		accessory.uuid_base = id;
+		if (!accessory.getServices) accessory.getServices = getServices.bind(accessory);
+	}
+	this.accessory = accessory;
+
+	this.accessory.getService(Service.AccessoryInformation)
+		.setCharacteristic(Characteristic.Manufacturer, &#x22;Logitech&#x22;)
+		.setCharacteristic(Characteristic.Model, &#x22;Harmony&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.activity_accessory" id="apidoc.module.homebridge-harmonyhub.activity_accessory">module homebridge-harmonyhub.activity_accessory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.activity_accessory.activity_accessory" id="apidoc.element.homebridge-harmonyhub.activity_accessory.activity_accessory">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>activity_accessory
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">activity_accessory = function (exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Service) {
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+		inherit.changeBase(ActivityService, Service.Switch);
+		ActivityService.UUID = Service.Switch.UUID;
+	}
+	return ActivityAccessory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.activity_accessory.ActivityAccessory" id="apidoc.element.homebridge-harmonyhub.activity_accessory.ActivityAccessory">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.activity_accessory.</span>ActivityAccessory
+        <span class="apidocSignatureSpan">(accessory, log, connection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ActivityAccessory(accessory, log, connection) {
+	this._onConnectionChanged = onConnectionChanged.bind(this);
+	this._onStateChanged = onStateChanged.bind(this);
+	HubAccessoryBase.call(this, accessory, connection, ActivityAccessory.typeKey, null, log);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.bluebird_ext" id="apidoc.module.homebridge-harmonyhub.bluebird_ext">module homebridge-harmonyhub.bluebird_ext</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.bluebird_ext.asBlueBird" id="apidoc.element.homebridge-harmonyhub.bluebird_ext.asBlueBird">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.bluebird_ext.</span>asBlueBird
+        <span class="apidocSignatureSpan">(func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">asBlueBird = function (func) {
+	return function() {
+		return toBlueBird(func.apply(this, arguments));
+	};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	var self = this;
+	return new Promise(function(resolve, reject) {
+		self.queue.push(resolve);
+		startQueueInBackground(self.queue);
+	})
+	.then(function(cb){
+		return self._getClientAsync()
+			.then(BluebirdExt.<span class="apidocCodeKeywordSpan">asBlueBird</span>(func))
+			.finally(function(){
+				setTimeout(cb, 0);
+			})
+			.catch(function(err){
+				throw err;
+			});
+	});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.bluebird_ext.toBlueBird" id="apidoc.element.homebridge-harmonyhub.bluebird_ext.toBlueBird">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.bluebird_ext.</span>toBlueBird
+        <span class="apidocSignatureSpan">(promise)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toBlueBird = function (promise) {
+	if (!promise || promise instanceof Promise ||
+		!promise.then || typeof promise.then !== &#x22;function&#x22;) {
+		return promise;
+	}
+	return new Promise(function(resolve, reject){
+		return promise.then(resolve, reject);
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	var lastClient = this.client;
+	var lastQueue = this.queue;
+	this.queue = null;
+	this.client = null;
+	this._OnConnectionChanged();
+	//TODO: Properly cancel running tasks
+	if (lastQueue) lastQueue.end();
+	if (lastClient) return BluebirdExt.<span class="apidocCodeKeywordSpan">toBlueBird</span>(lastClient.end());
+	return Promise.resolve();
+};
+
+HubConnection.prototype._getClientAsync = function() {
+	var client = this.client;
+	if (client) {
+		return Promise.resolve(client);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.home_platform" id="apidoc.module.homebridge-harmonyhub.home_platform">module homebridge-harmonyhub.home_platform</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.home_platform.home_platform" id="apidoc.element.homebridge-harmonyhub.home_platform.home_platform">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>home_platform
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">home_platform = function () {
+	return HomePlatform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.home_platform.HomePlatform" id="apidoc.element.homebridge-harmonyhub.home_platform.HomePlatform">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.home_platform.</span>HomePlatform
+        <span class="apidocSignatureSpan">(log, config, api)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HomePlatform(log, config, api) {
+	EventEmitter.call(this);
+
+	this.log = log;
+
+	if (!config) {
+		log.warn(&#x22;Ignoring Harmony Platform setup because it is not configured&#x22;);
+		this.disabled = true;
+		return;
+	}
+
+	if (singleton) {
+		log.warn(&#x22;Ignoring duplicate Harmony Platform.  Only one platform can be defined.  Multi-Hub support is now built into the platform
+, so multiple definitions are no longer required.&#x22;);
+		this.disabled = true;
+		return;
+	}
+	singleton = this;
+
+	if (config.ip_address) {
+		log.warn(&#x22;Specifying ip_address is no longer supported in the platform, so the specified ip_address will be ignored. The platform
+ is designed for auto discovery of all hubs on the network.&#x22;);
+	}
+
+	var self = this;
+
+	self._discoveredHubs = [];
+	self._cachedAccessories = [];
+	self._hubs = {};
+	self._hubIndex = [];
+	self._isInitialized = false;
+	self._autoAddNewHubs = false;
+
+	self._discover = new Discover(61991);
+
+	self._discover.on(&#x27;update&#x27;, function (hubs) {
+		self.log.debug(&#x27;received update event from harmonyhubjs-discover. there are &#x27; + hubs.length + &#x27; hubs&#x27;);
+		self._discoveredHubs = hubs;
+		_.forEach(self._discoveredHubs, self._handleDiscoveredHubAsync.bind(self));
+		self.emit(Events.DiscoveredHubs, hubs);
+	});
+	
+	self._discover.start();
+
+	if (api) {
+		// Save the API object as plugin needs to register new accessory via this object.
+		self._api = api;
+
+		// Listen to event &#x22;didFinishLaunching&#x22;, this means homebridge already finished loading cached accessories
+		// Platform Plugin should only register new accessory that doesn&#x27;t exist in homebridge after this event.
+		// Or start discover new accessories
+		self._api.on(&#x27;didFinishLaunching&#x27;, self._finishInitialization.bind(self));
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.hub" id="apidoc.module.homebridge-harmonyhub.hub">module homebridge-harmonyhub.hub</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub.hub" id="apidoc.element.homebridge-harmonyhub.hub.hub">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hub = function (exportedTypes) {
+	return Hub;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub.Hub" id="apidoc.element.homebridge-harmonyhub.hub.Hub">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub.</span>Hub
+        <span class="apidocSignatureSpan">(log, connection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Hub(log, connection) {
+	this.connection = connection;
+	this.log = log;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.hub_accessory_base" id="apidoc.module.homebridge-harmonyhub.hub_accessory_base">module homebridge-harmonyhub.hub_accessory_base</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_accessory_base.hub_accessory_base" id="apidoc.element.homebridge-harmonyhub.hub_accessory_base.hub_accessory_base">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_accessory_base
+        <span class="apidocSignatureSpan">(exportedTypes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hub_accessory_base = function (exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Service) {
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+	}
+	return HubAccessoryBase;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_accessory_base.HubAccessoryBase" id="apidoc.element.homebridge-harmonyhub.hub_accessory_base.HubAccessoryBase">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_accessory_base.</span>HubAccessoryBase
+        <span class="apidocSignatureSpan">(accessory, connection, idKey, name, log)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HubAccessoryBase(accessory, connection, idKey, name, log) {
+	var hubId, hubInfo;
+	if (connection) {
+		hubId = connection.hubId;
+		hubInfo = connection.hubInfo;
+	} else if (accessory &#x26;&#x26; accessory.context) {
+		hubId = accessory.context.hubId;
+		hubInfo = accessory.context.hubInfo;
+	}
+	AccessoryBase.call(this, accessory, hubId + idKey, name || (hubInfo &#x26;&#x26; hubInfo.friendlyName), log);
+	this._refreshConnection = refreshConnection.bind(this);
+	this.updateConnection(connection);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.hub_connection" id="apidoc.module.homebridge-harmonyhub.hub_connection">module homebridge-harmonyhub.hub_connection</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.hub_connection" id="apidoc.element.homebridge-harmonyhub.hub_connection.hub_connection">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_connection
+        <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HubConnection(hubInfo, log, discover) {
+	EventEmitter.call(this);
+	this.hubId = hubInfo.uuid;
+	this.hubInfo = hubInfo;
+	this.log = log;
+	this._discover = discover;
+
+	var self = this;
+	self._discover.on(&#x27;online&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOnline();
+	});
+
+	self._discover.on(&#x27;offline&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOffline();
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.HubConnection" id="apidoc.element.homebridge-harmonyhub.hub_connection.HubConnection">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>HubConnection
+        <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HubConnection(hubInfo, log, discover) {
+	EventEmitter.call(this);
+	this.hubId = hubInfo.uuid;
+	this.hubInfo = hubInfo;
+	this.log = log;
+	this._discover = discover;
+
+	var self = this;
+	self._discover.on(&#x27;online&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOnline();
+	});
+
+	self._discover.on(&#x27;offline&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOffline();
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.createAsync" id="apidoc.element.homebridge-harmonyhub.hub_connection.createAsync">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>createAsync
+        <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createAsync = function (hubInfo, log, discover) {
+	var conn = new HubConnection(hubInfo, log, discover);
+	return conn.connectAsync(hubInfo)
+		.return(conn);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.super_" id="apidoc.element.homebridge-harmonyhub.hub_connection.super_">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.hub_connection.prototype" id="apidoc.module.homebridge-harmonyhub.hub_connection.prototype">module homebridge-harmonyhub.hub_connection.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._HandleConnectionOffline" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype._HandleConnectionOffline">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_HandleConnectionOffline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_HandleConnectionOffline = function () {
+	this.log.debug(&#x27;client for hub &#x27; + this.hubInfo.uuid + &#x27; went offline. re-establish.&#x27;);
+	this.client = undefined;
+	return this.refresh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	self._discover.on(&#x27;online&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOnline();
+	});
+
+	self._discover.on(&#x27;offline&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self.<span class="apidocCodeKeywordSpan">_HandleConnectionOffline</span>();
+	});
+}
+
+util.inherits(HubConnection, EventEmitter);
+
+HubConnection.createAsync = function(hubInfo, log, discover) {
+	var conn = new HubConnection(hubInfo, log, discover);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._HandleConnectionOnline" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype._HandleConnectionOnline">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_HandleConnectionOnline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_HandleConnectionOnline = function () {
+	this.log.debug(&#x22;Hub went online: &#x22; + this.hubId);
+	return this.refresh();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	this.hubInfo = hubInfo;
+	this.log = log;
+	this._discover = discover;
+
+	var self = this;
+	self._discover.on(&#x27;online&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self.<span class="apidocCodeKeywordSpan">_HandleConnectionOnline</span>();
+	});
+
+	self._discover.on(&#x27;offline&#x27;, function (info) {
+		if (!info || info.uuid != self.hubId) return;
+		self._HandleConnectionOffline();
+	});
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._OnConnectionChanged" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype._OnConnectionChanged">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_OnConnectionChanged
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_OnConnectionChanged = function () {
+	var last = this._lastStatus;
+	var status = this.status;
+	if (last == status) return;
+	this._lastStatus = status;
+	this.emit(Events.ConnectionChanged, status);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+HubConnection.prototype.disconnectAsync = function() {
+	var lastClient = this.client;
+	var lastQueue = this.queue;
+	this.queue = null;
+	this.client = null;
+	this.<span class="apidocCodeKeywordSpan">_OnConnectionChanged</span>();
+	//TODO: Properly cancel running tasks
+	if (lastQueue) lastQueue.end();
+	if (lastClient) return BluebirdExt.toBlueBird(lastClient.end());
+	return Promise.resolve();
+};
+
+HubConnection.prototype._getClientAsync = function() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype._getClientAsync" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype._getClientAsync">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>_getClientAsync
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_getClientAsync = function () {
+	var client = this.client;
+	if (client) {
+		return Promise.resolve(client);
+	}
+	var connTask = this._connTask;
+	if (connTask) {
+		return connTask;
+	}
+	var self = this;
+	connTask = BluebirdExt.toBlueBird(Client(self.hubInfo.ip))
+		.then(function (client) {
+			self.log.debug(&#x27;created new client for hub with uuid &#x27; + self.hubId);
+
+			client._xmppClient.on(&#x27;offline&#x27;, self._HandleConnectionOffline.bind(self));
+
+			client.on(&#x27;stateDigest&#x27;, function (stateDigest) {
+				self.log.debug(&#x27;got state digest. reemit it&#x27;);
+				self.emit(Events.StateDigest, {
+					stateDigest: stateDigest
+				});
+			});
+			self.client = client;
+			return client;
+		});
+	this._connTask = connTask;
+	this._OnConnectionChanged();
+	return connTask
+		.timeout(30 * 1000)
+		.finally(function() {
+			if (self._connTask == connTask) {
+				self._connTask = null;
+			}
+			self._OnConnectionChanged();
+		});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+HubConnection.prototype.invokeAsync = function(func) {
+	var self = this;
+	return new Promise(function(resolve, reject) {
+		self.queue.push(resolve);
+		startQueueInBackground(self.queue);
+	})
+	.then(function(cb){
+		return self.<span class="apidocCodeKeywordSpan">_getClientAsync</span>()
+			.then(BluebirdExt.asBlueBird(func))
+			.finally(function(){
+				setTimeout(cb, 0);
+			})
+			.catch(function(err){
+				throw err;
+			});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.connectAsync" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype.connectAsync">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>connectAsync
+        <span class="apidocSignatureSpan">(hubInfo)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connectAsync = function (hubInfo) {
+	this.hubInfo = hubInfo;
+	this.client = null;
+	this.queue = new Queue();
+	this.queue.concurrency = 1;
+	return this.refreshAsync();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		hub = new Hub(this.log, conn);
+		this._hubs[hubId] = hub;
+		this._hubIndex.push(hubId);
+	} else {
+		hub.updateConnection(conn);
+	}
+
+	return conn.<span class="apidocCodeKeywordSpan">connectAsync</span>(hubInfo)
+		.then(this._refreshHubAccessoriesAsync.bind(this, hubId, hub, true));
+};
+
+HomePlatform.prototype._refreshHubAccessoriesAsync = function(hubId, hub, doRegister) {
+	var self = this;
+	var cachedAccList = _.filter(self._cachedAccessories, function(acc) {
+		return acc &#x26;&#x26; acc.context &#x26;&#x26; acc.context.hubId == hubId;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.disconnectAsync" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype.disconnectAsync">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>disconnectAsync
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disconnectAsync = function () {
+	var lastClient = this.client;
+	var lastQueue = this.queue;
+	this.queue = null;
+	this.client = null;
+	this._OnConnectionChanged();
+	//TODO: Properly cancel running tasks
+	if (lastQueue) lastQueue.end();
+	if (lastClient) return BluebirdExt.toBlueBird(lastClient.end());
+	return Promise.resolve();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.invokeAsync" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype.invokeAsync">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>invokeAsync
+        <span class="apidocSignatureSpan">(func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">invokeAsync = function (func) {
+	var self = this;
+	return new Promise(function(resolve, reject) {
+		self.queue.push(resolve);
+		startQueueInBackground(self.queue);
+	})
+	.then(function(cb){
+		return self._getClientAsync()
+			.then(BluebirdExt.asBlueBird(func))
+			.finally(function(){
+				setTimeout(cb, 0);
+			})
+			.catch(function(err){
+				throw err;
+			});
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+ActivityAccessory.prototype.initAsync = function() {
+	if (!this.connection) return Promise.resolve();
+
+	this.log(&#x22;Fetching Logitech Harmony activities...&#x22;);
+	var self = this;
+	return Promise.all([
+			this.connection.<span class="apidocCodeKeywordSpan">invokeAsync</span>(function(client){
+				return client.getActivities();
+			}),
+			this.connection.invokeAsync(function(client){
+				return client.getCurrentActivity();
+			})
+		])
+		.bind(this)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.refresh" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype.refresh">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>refresh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">refresh = function () {
+	var self = this;
+	this.refreshAsync()
+		.catch(function(err) {
+			self.log.debug(err);
+			self._OnConnectionChanged();
+		});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		if (this.hubInfo) return ConnectionStatus.Disconnected;
+		return ConnectionStatus.Unknown;
+	}
+});
+
+HubConnection.prototype._HandleConnectionOnline = function() {
+	this.log.debug(&#x22;Hub went online: &#x22; + this.hubId);
+	return this.<span class="apidocCodeKeywordSpan">refresh</span>();
+};
+
+HubConnection.prototype._HandleConnectionOffline = function() {
+	this.log.debug(&#x27;client for hub &#x27; + this.hubInfo.uuid + &#x27; went offline. re-establish.&#x27;);
+	this.client = undefined;
+	return this.refresh();
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.hub_connection.prototype.refreshAsync" id="apidoc.element.homebridge-harmonyhub.hub_connection.prototype.refreshAsync">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.hub_connection.prototype.</span>refreshAsync
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">refreshAsync = function () {
+	this._OnConnectionChanged();
+	return this.invokeAsync(function(client){
+		return client;
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+HubConnection.prototype.connectAsync = function(hubInfo) {
+	this.hubInfo = hubInfo;
+	this.client = null;
+	this.queue = new Queue();
+	this.queue.concurrency = 1;
+	return this.<span class="apidocCodeKeywordSpan">refreshAsync</span>();
+};
+
+HubConnection.prototype.disconnectAsync = function() {
+	var lastClient = this.client;
+	var lastQueue = this.queue;
+	this.queue = null;
+	this.client = null;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.inherit" id="apidoc.module.homebridge-harmonyhub.inherit">module homebridge-harmonyhub.inherit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.inherit.changeBase" id="apidoc.element.homebridge-harmonyhub.inherit.changeBase">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.inherit.</span>changeBase
+        <span class="apidocSignatureSpan">(Class, BaseClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">changeBase = function (Class, BaseClass) {
+	var orig = Class.prototype;
+	util.inherits(Class, BaseClass);
+	Class.prototype.parent = BaseClass.prototype;
+	mixin(Class, orig, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var Service, Characteristic;
+
+module.exports = function(exportedTypes) {
+	if (exportedTypes &#x26;&#x26; !Service) {
+		Service = exportedTypes.Service;
+		Characteristic = exportedTypes.Characteristic;
+		inherit.<span class="apidocCodeKeywordSpan">changeBase</span>(ActivityService, Service.Switch);
+		ActivityService.UUID = Service.Switch.UUID;
+	}
+	return ActivityAccessory;
+};
+module.exports.ActivityAccessory = ActivityAccessory;
+
+const ActivityStatus = {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.inherit.fromInstance" id="apidoc.element.homebridge-harmonyhub.inherit.fromInstance">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.inherit.</span>fromInstance
+        <span class="apidocSignatureSpan">(inst, Class)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fromInstance = function (inst, Class) {
+	if (inst == null) {
+		return null;
+	}
+	if (!(inst instanceof Class)) {
+		throw new Error(&#x22;Incorrect type. Expected &#x22; + Class);
+	}
+	mixin(inst, Class, false);
+	return inst;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.inherit.mixin" id="apidoc.element.homebridge-harmonyhub.inherit.mixin">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.inherit.</span>mixin
+        <span class="apidocSignatureSpan">(Class, MixinClass, doOverride)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mixin = function (Class, MixinClass, doOverride) {
+	var mixinMethods = MixinClass.prototype || MixinClass;
+	var cls = Class.prototype || Class;
+	for (var mn in mixinMethods) {
+		if (!doOverride &#x26;&#x26; cls[mn] != undefined) return;
+		cls[mn] = mixinMethods[mn];
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
