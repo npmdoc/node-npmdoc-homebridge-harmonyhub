@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.homebridge-harmonyhub">
+            function <span class="apidocSignatureSpan"></span>homebridge-harmonyhub
+            <span class="apidocSignatureSpan">(homebridge)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.accessory_base">
             function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>accessory_base
             <span class="apidocSignatureSpan">(exportedTypes)</span>
@@ -104,6 +113,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.hub_connection">
             function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>hub_connection
             <span class="apidocSignatureSpan">(hubInfo, log, discover)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.toString">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>toString
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -440,10 +458,55 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-harmonyhub.toString">module homebridge-harmonyhub.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge-harmonyhub.toString.toString">
+            function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.homebridge-harmonyhub" id="apidoc.module.homebridge-harmonyhub">module homebridge-harmonyhub</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.homebridge-harmonyhub" id="apidoc.element.homebridge-harmonyhub.homebridge-harmonyhub">
+        function <span class="apidocSignatureSpan"></span>homebridge-harmonyhub
+        <span class="apidocSignatureSpan">(homebridge)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">homebridge-harmonyhub = function (homebridge) {
+	Service = homebridge.hap.Service;
+	Characteristic = homebridge.hap.Characteristic;
+	Accessory = homebridge.hap.Accessory;
+	uuid = homebridge.hap.uuid;
+	var exportedTypes = {
+		Service: homebridge.hap.Service,
+		Characteristic: homebridge.hap.Characteristic,
+		Accessory: homebridge.hap.Accessory,
+		PlatformAccessory: homebridge.platformAccessory,
+		uuid: homebridge.hap.uuid
+	};
+	exportedTypes.AccessoryBase = require('./lib/accessory-base')(exportedTypes);
+	exportedTypes.HubAccessoryBase = require('./lib/hub-accessory-base')(exportedTypes);
+	exportedTypes.ActivityAccessory = require('./lib/activity-accessory')(exportedTypes);
+	exportedTypes.Hub = require('./lib/hub')(exportedTypes);
+	exportedTypes.HomePlatform = require('./lib/home-platform')(exportedTypes);
+
+	homebridge.registerPlatform("homebridge-harmonyhub", "HarmonyHub", exportedTypes.HomePlatform, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -561,6 +624,21 @@
 		if (!info || info.uuid != self.hubId) return;
 		self._HandleConnectionOffline();
 	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.toString" id="apidoc.element.homebridge-harmonyhub.toString">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1439,6 +1517,24 @@ const ActivityStatus = {
 		cls[mn] = mixinMethods[mn];
 	}
 }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge-harmonyhub.toString" id="apidoc.module.homebridge-harmonyhub.toString">module homebridge-harmonyhub.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge-harmonyhub.toString.toString" id="apidoc.element.homebridge-harmonyhub.toString.toString">
+        function <span class="apidocSignatureSpan">homebridge-harmonyhub.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
