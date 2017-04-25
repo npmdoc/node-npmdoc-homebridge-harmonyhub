@@ -1,4 +1,7 @@
-# api documentation for  [homebridge-harmonyhub (v0.2.0)](https://github.com/kraigm/homebridge-harmonyhub#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-harmonyhub.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-harmonyhub) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-harmonyhub.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-harmonyhub)
+# npmdoc-homebridge-harmonyhub
+
+#### basic api documentation for  [homebridge-harmonyhub (v0.2.0)](https://github.com/kraigm/homebridge-harmonyhub#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-harmonyhub.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-harmonyhub) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-harmonyhub.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-harmonyhub)
+
 #### Logitech Harmony Hub plugin for HomeBridge
 
 [![NPM](https://nodei.co/npm/homebridge-harmonyhub.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/homebridge-harmonyhub)
@@ -60,7 +63,8 @@
         "url": "git://github.com/kraigm/homebridge-harmonyhub.git"
     },
     "scripts": {},
-    "version": "0.2.0"
+    "version": "0.2.0",
+    "bin": {}
 }
 ```
 
